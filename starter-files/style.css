@@ -1,0 +1,134 @@
+/* ========================================================= 
+    Lab 6 - style.css starter
+    
+    Task F:
+      - Creative UX
+      - You may customize colors, fonts, and button styles.
+========================================================= */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #0b1220;
+  color: #eef2ff;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.card {
+  background: #121b2e;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #0f172a;
+  color: #eef2ff;
+}
+
+input {
+  width: calc(100% - 20px);
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.primary {
+  background: #2563eb;
+  color: white;
+}
+
+button.secondary {
+  background: rgba(255, 255, 255, 0.10);
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.err {
+  color: #fb7185;
+  min-height: 18px;
+  font-size: 0.9rem;
+}
+
+.pill {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.notice {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.choices {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.choiceBtn {
+  text-align: left;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #eef2ff;
+}
+
+.choiceBtn:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
